@@ -27,7 +27,7 @@ public class GenericStpes {
 
     @Before
     public void before(Scenario s) {
-        System.out.println("TESTING..");
+        System.out.println("before..");
         connector.initReports(s.getName());
     }
 
@@ -38,6 +38,7 @@ public class GenericStpes {
 
     @Given("I open browser")
     public void i_open_browser() {
+        System.out.println("Opening browser..");
         connector.openBrowser();
     }
 
